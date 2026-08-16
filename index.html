@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hello, Martina</title>
+<meta name="description" content="A quiet little universe made of memories, drawings, animals, stars, and the things words sometimes leave unsaid.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain"></div>
+<div id="stars"></div>
+
+<header class="topbar">
+  <div class="tiny-mark">M · F</div>
+  <button id="soundBtn" class="sound" aria-label="Toggle music">♪ <span>soft memory</span></button>
+</header>
+
+<main>
+<section class="hero scene warm" id="hello">
+  <div class="hero-copy">
+    <p class="eyebrow">a small place made gently</p>
+    <h1>Hello,<br><em>Martina.</em></h1>
+    <p class="subtitle">Before the universe got complicated,<br>there was simply you — smiling at the camera.</p>
+    <a class="scroll-cue" href="#phrase">↓ keep going</a>
+  </div>
+  <div class="hero-photo frame">
+    <img src="assets/martina-child.png" alt="Martina as a child">
+    <span class="frame-note">one of the first little windows into her world</span>
+  </div>
+</section>
+
+<section class="scene phrase" id="phrase">
+  <div class="phrase-card">
+    <span class="chapter">01 · our little language</span>
+    <div class="phrase-line">“Wala Derly Ferly.”</div>
+    <p>Some words don't need a dictionary.<br>They just need two people who remember.</p>
+  </div>
+</section>
+
+<section class="scene animals" id="animals">
+  <div class="section-intro">
+    <span class="chapter">02 · Martina's world</span>
+    <h2>A world with fins,<br><em>shells & little miracles.</em></h2>
+    <p>There is something tender about the things she chooses to notice.</p>
+  </div>
+  <div class="animal-orbit">
+    <button class="animal-card a1" data-caption="quiet water, bright colors">
+      <img src="assets/animal-fish.jpg" alt="Fish">
+      <span>01</span>
+    </button>
+    <button class="animal-card a2" data-caption="slow is still a way of moving">
+      <img src="assets/animal-turtle.jpg" alt="Turtle">
+      <span>02</span>
+    </button>
+    <button class="animal-card a3" data-caption="tiny things can carry whole worlds">
+      <img src="assets/animal-betta.jpg" alt="Betta fish">
+      <span>03</span>
+    </button>
+    <button class="animal-card a4" data-caption="a room can become an ocean">
+      <img src="assets/animal-aquarium.jpg" alt="Aquarium">
+      <span>04</span>
+    </button>
+    <div class="orbit-word">her<br>quiet<br>kingdom</div>
+  </div>
+</section>
+
+<section class="scene drawings" id="drawings">
+  <div class="section-intro">
+    <span class="chapter">03 · things she drew</span>
+    <h2>And then she<br><em>put faces to feelings.</em></h2>
+    <p>Four little windows. Different moods. The same careful eye.</p>
+  </div>
+  <div class="gallery">
+    <button class="drawing tall" data-img="assets/drawing-01.jpg"><img src="assets/drawing-01.jpg" alt="Portrait drawing"></button>
+    <button class="drawing" data-img="assets/drawing-02.jpg"><img src="assets/drawing-02.jpg" alt="Portrait drawing"></button>
+    <button class="drawing wide" data-img="assets/drawing-03.jpg"><img src="assets/drawing-03.jpg" alt="Portrait drawing"></button>
+    <button class="drawing" data-img="assets/drawing-04.jpg"><img src="assets/drawing-04.jpg" alt="Portrait drawing"></button>
+  </div>
+</section>
+
+<section class="scene max" id="max">
+  <div class="max-constellation" id="maxConstellation"></div>
+  <div class="max-layout">
+    <div class="max-photo-wrap">
+      <div class="max-photo-glow"></div>
+      <img class="max-photo" src="assets/max.jpg" alt="Max resting on the floor">
+      <span class="photo-note">Max · one of the quiet constants</span>
+    </div>
+    <div class="max-copy">
+      <span class="chapter">04 · max</span>
+      <h2>Some friendships<br><em>grow beside us.</em></h2>
+      <p class="date">2012 — 02 · 10 · 2025</p>
+      <p>He was there through years that changed everything else. Some companions don't simply stay in your life — they become part of the way you remember it.</p>
+      <div class="max-scroll-note">scroll slowly<br><small>and let the last little light find its way into the sky</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="scene song" id="song">
+  <div class="song-inner">
+    <span class="chapter">05 · the song</span>
+    <div class="music-disc" id="disc">♪</div>
+    <h2>“Yemken Habeit”</h2>
+    <p>Some songs become little time machines.<br>This one gets its own room.</p>
+    <button class="play-main" id="playMain">play the memory · 00:00</button>
+    <audio id="memoryAudio" src="assets/memory-song.mp3" preload="metadata"></audio>
+<audio id="canonAudio" src="assets/canon-in-d-finale.wav" preload="metadata"></audio>
+  </div>
+</section>
+
+<section class="scene cosmos" id="cosmos">
+  <div class="cosmos-copy">
+    <span class="chapter">06 · my side of the sky</span>
+    <h2>Then there is<br><em>my universe.</em></h2>
+    <p>Stars. Orbits. The quiet mathematics of things too far away to touch.</p>
+  </div>
+  <div class="iss-wrap">
+    <img src="assets/iss.jpg" alt="International Space Station">
+    <span>somewhere above everything</span>
+  </div>
+</section>
+
+<section class="scene merge" id="merge">
+  <div class="merge-stars"></div>
+  <div class="merge-copy">
+    <span class="chapter">07 · two worlds</span>
+    <div class="split-word"><span>her</span><i>×</i><span>mine</span></div>
+    <p>Maybe the beautiful part is not choosing one universe.</p>
+    <p>Maybe it is discovering that they can share the same sky.</p>
+    <div class="final-line">i wish they became 1000</div>
+    <p class="after">A thousand small moments.<br>Not a promise. Just a wish.</p>
+  </div>
+</section>
+
+<section class="finale" id="finale">
+  <div class="finale-sky" id="finaleSky"></div>
+  <div class="finale-ui">
+    <span class="chapter">08 · after everything</span>
+    <div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div>
+    <div class="finale-star">✦</div>
+    <h2 id="finaleTitle">some things<br><em>are better left glowing.</em></h2>
+    <p id="finaleText">Move your finger across the sky.<br>The stars will remember where you were.</p>
+    <button id="canonBtn">♫ enter the last room</button>
+    <div class="finale-quote" id="finaleQuote">i wish they became 1000</div>
+    <div class="finale-sub" id="finaleSub">not a confession.<br>just a little wish, left among the stars.</div>
+  </div>
+</section>
+<section class="end">
+  <p>the page ends quietly.</p>
+  <a href="#hello">↑ begin again</a>
+</section>
+</main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="close">×</button>
+  <img id="lightboxImg" alt="">
+  <p id="lightboxCaption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
